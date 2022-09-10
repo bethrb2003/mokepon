@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    font-family: 'Silkscreen', cursive;
+    background-color: #495C83;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+}
+
+.subtitulo {
+    color: white;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    cursor: pointer;
+    width: 150px;
+    height: 200px;
+    background: #7A86B6;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotos {
+width: 85px;
+}
+
+.cajaFoto {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #C8B6E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nombre-mascota {
+    background-color: #C8B6E2;
+    border-radius: 10px;
+    color: white;
+    height: 25px;
+    width: 130px;
+    margin: 10px;
+ }
+.nombre-mascota p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+#boton-mascota {
+    cursor: pointer;
+    width: 300px;
+    margin: 20px;
+    background-color: #C8B6E2;
+    color: white;
+    border-color: #A8A4CE;
+    font-family: 'Silkscreen', cursive;
+}
+
+#boton-mascota:hover {
+background-color: #A8A4CE;
+border-color: #7A86B6;
+}
+
+input {
+    display: none;
+}
+
+input:hover + label {
+    background-color: #A8A4CE;
+}
+
+input:checked + label {
+    background-color: #C8B6E2;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    cursor: pointer;
+    background-color: #A8A4CE;
+    border-color: #7A86B6;
+    display: flex;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 90px;
+    font-family: 'Silkscreen', cursive;
+}
+.boton-de-ataque:hover {
+    background-color: #C8B6E2;
+    border-color: #A8A4CE; 
+}
+
+.mensaje-resultados {
+    width: 285px;
+    height: 100px;
+    background-color: #7A86B6;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#boton-reiniciar {
+    width: 300px;
+    margin: 20px;
+    background-color: #C8B6E2;
+    color: white;
+    border-color: #A8A4CE;
+    font-family: 'Silkscreen', cursive;
+}
+
+#boton-reiniciar:hover {
+    background-color: #A8A4CE;
+    border-color: #7A86B6;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 130px 130px;
+}
+.tarjetas-vidas {
+    margin: 10px;
+    width: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A8A4CE;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
