@@ -168,6 +168,38 @@ input:checked + label {
     border: 2px solid white;
 }
 
+.botones-direccion {
+    display: flex;
+    margin: 20px;
+}
+
+.botones-direccion button {
+    cursor: pointer;
+    background-color: #A8A4CE;
+    border-color: #7A86B6;
+    display: flex;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+.botones-direccion button:hover {
+    background-color: #A8A4CE;
+    border-color: #7A86B6;
+}
+
+.botones-direccion .direccion-x {
+    margin-top: 40px;
+}
+
+.direccion-y {
+    display: flex;
+    flex-direction: column;
+}
+
+
 @media (max-width: 360px) {
     .tarjetas, .tarjetas-ataques {
         flex-direction: column;

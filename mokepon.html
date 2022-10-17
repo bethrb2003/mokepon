@@ -22,7 +22,15 @@
     <section id="ver-mapa">
         <h1 class="titulo">Recorre el mapa con tu mokepon</h1>
         <canvas id="mapa"></canvas>
-        <button onClick="moverCapybara()">Mover</button>
+        <div class="botones-direccion">
+            <button class="direccion-x" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">🡠</button> 
+            <div class="direccion-y">
+                <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">🡡</button> 
+                <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">🡣</button> 
+            </div>
+            <button class="direccion-x" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">🡢</button> 
+        </div>
+        
     </section>
 
     <section id="seleccionar-ataque">
